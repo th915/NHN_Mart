@@ -25,7 +25,6 @@ public class Customer {
         boolean stock = false;
 
         for (int i=0; i < buyList.getItemsSize(); i++){
-//            for(int k = buyList.getItems().get(i).getAmount(); k > 0; k--){
                 for(int j = 0; j < foodStand.getFoodSize(); j++){
                     if((buyList.getItems().get(i).getName()).equals(foodStand.getFoods().get(j).getName())){
                         basket.add(foodStand.getFoods().get(j));
@@ -41,7 +40,6 @@ public class Customer {
                     throw new RuntimeException("재고가 없습니다.");
                 }
             }
- //       }
     }
 
 
